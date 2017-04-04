@@ -20,6 +20,7 @@ public class HelloController {
 		User user = new User() ;
 		user.setUsername("lxf");
 		user.setPassword("123456");
+		@SuppressWarnings("unused")
 		List<User> users = (List<User>) userService.findAll() ;
 		user = userService.getById(2L) ;
 		System.out.println("Hello world");
